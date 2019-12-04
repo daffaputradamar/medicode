@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-list-dokter',
-  templateUrl: './list-dokter.component.html',
-  styleUrls: ['./list-dokter.component.css']
+  selector: "app-list-dokter",
+  templateUrl: "./list-dokter.component.html",
+  styleUrls: ["./list-dokter.component.css"]
 })
 export class ListDokterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
+  tambah() {}
 }

@@ -11,9 +11,13 @@ import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { ListDokterComponent } from './pages/list-dokter/list-dokter.component';
 import { AddDokterComponent } from './pages/add-dokter/add-dokter.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ListPetugasMedisComponent } from './pages/list-petugas-medis/list-petugas-medis.component';
+import { ListPasienComponent } from './pages/list-pasien/list-pasien.component';
+import { ListPoliComponent } from './pages/list-poli/list-poli.component';
+import { ListApotekerComponent } from './pages/list-apoteker/list-apoteker.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, DashboardComponent, ListDokterComponent, AddDokterComponent,LoginComponent],
+  declarations: [AppComponent, SidebarComponent, DashboardComponent, ListDokterComponent, AddDokterComponent,LoginComponent, ListPetugasMedisComponent, ListPasienComponent, ListPoliComponent, ListApotekerComponent],
 
   imports: [
     BrowserModule,
