@@ -10,9 +10,11 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { ListDokterComponent } from './pages/list-dokter/list-dokter.component';
 import { AddDokterComponent } from './pages/add-dokter/add-dokter.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, DashboardComponent, ListDokterComponent, AddDokterComponent],
+  declarations: [AppComponent, SidebarComponent, DashboardComponent, ListDokterComponent, AddDokterComponent,LoginComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
