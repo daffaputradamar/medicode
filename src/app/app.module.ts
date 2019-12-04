@@ -7,10 +7,12 @@ import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
-import { DashboardComponent } from "./pages/admin/dashboard/dashboard.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+import { ListDokterComponent } from './pages/list-dokter/list-dokter.component';
+import { AddDokterComponent } from './pages/add-dokter/add-dokter.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, DashboardComponent],
+  declarations: [AppComponent, SidebarComponent, DashboardComponent, ListDokterComponent, AddDokterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

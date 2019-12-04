@@ -1,4 +1,160 @@
 /* You can add global styles to this file, and also import other style files */
-.bg-black {
-  background-color: black;
+
+/*------------------------------------
+- COLOR medicode
+------------------------------------*/
+.alert-medicode {
+  color: #0e654e;
+  background-color: #c3f6e9;
+  border-color: #b1f4e2;
+}
+
+.alert-medicode hr {
+  border-top-color: #9af1da;
+}
+
+.alert-medicode .alert-link {
+  color: #07382b;
+}
+
+.badge-medicode {
+  color: #212529;
+  background-color: #1dd1a1;
+}
+
+.badge-medicode[href]:hover,
+.badge-medicode[href]:focus {
+  color: #212529;
+  background-color: #16a47e;
+}
+
+.bg-medicode {
+  background-color: #1dd1a1 !important;
+}
+
+a.bg-medicode:hover,
+a.bg-medicode:focus,
+button.bg-medicode:hover,
+button.bg-medicode:focus {
+  background-color: #16a47e !important;
+}
+
+.border-medicode {
+  border-color: #1dd1a1 !important;
+}
+
+.btn-medicode {
+  color: #ffffff;
+  background-color: #1dd1a1;
+  border-color: #1dd1a1;
+}
+
+.btn-medicode:hover {
+  color: #212529;
+  background-color: #18b188;
+  border-color: #16a47e;
+}
+
+.btn-medicode:focus,
+.btn-medicode.focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 209, 161, 0.5);
+}
+
+.btn-medicode.disabled,
+.btn-medicode:disabled {
+  color: #212529;
+  background-color: #1dd1a1;
+  border-color: #1dd1a1;
+}
+
+.btn-medicode:not(:disabled):not(.disabled):active,
+.btn-medicode:not(:disabled):not(.disabled).active,
+.show > .btn-medicode.dropdown-toggle {
+  color: #212529;
+  background-color: #16a47e;
+  border-color: #149674;
+}
+
+.btn-medicode:not(:disabled):not(.disabled):active:focus,
+.btn-medicode:not(:disabled):not(.disabled).active:focus,
+.show > .btn-medicode.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 209, 161, 0.5);
+}
+
+.btn-outline-medicode {
+  color: #1dd1a1;
+  background-color: transparent;
+  border-color: #1dd1a1;
+}
+
+.btn-outline-medicode:hover {
+  color: #212529;
+  background-color: #1dd1a1;
+  border-color: #1dd1a1;
+}
+
+.btn-outline-medicode:focus,
+.btn-outline-medicode.focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 209, 161, 0.5);
+}
+
+.btn-outline-medicode.disabled,
+.btn-outline-medicode:disabled {
+  color: #1dd1a1;
+  background-color: transparent;
+}
+
+.btn-outline-medicode:not(:disabled):not(.disabled):active,
+.btn-outline-medicode:not(:disabled):not(.disabled).active,
+.show > .btn-outline-medicode.dropdown-toggle {
+  color: #212529;
+  background-color: #1dd1a1;
+  border-color: #1dd1a1;
+}
+
+.btn-outline-medicode:not(:disabled):not(.disabled):active:focus,
+.btn-outline-medicode:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-medicode.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 209, 161, 0.5);
+}
+
+.list-group-item-medicode {
+  color: #0e654e;
+  background-color: #b1f4e2;
+}
+
+.list-group-item-medicode.list-group-item-action:hover,
+.list-group-item-medicode.list-group-item-action:focus {
+  color: #0e654e;
+  background-color: #9af1da;
+}
+
+.list-group-item-medicode.list-group-item-action.active {
+  color: #212529;
+  background-color: #0e654e;
+  border-color: #0e654e;
+}
+
+.table-medicode,
+.table-medicode > th,
+.table-medicode > td {
+  background-color: #b1f4e2;
+}
+
+.table-hover .table-medicode:hover {
+  background-color: #9af1da;
+}
+
+.table-hover .table-medicode:hover > td,
+.table-hover .table-medicode:hover > th {
+  background-color: #9af1da;
+}
+
+.text-medicode {
+  color: #1dd1a1 !important;
+}
+
+a.text-medicode:hover,
+a.text-medicode:focus {
+  color: #16a47e !important;
 }
