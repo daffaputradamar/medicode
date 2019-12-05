@@ -8,6 +8,7 @@ import { ListPoliComponent } from "./pages/list-poli/list-poli.component";
 import { ListApotekerComponent } from "./pages/list-apoteker/list-apoteker.component";
 import { AddDokterComponent } from "./pages/add-dokter/add-dokter.component";
 import { LoginComponent } from "./pages/login/login.component";
+import { DokterComponent } from "./pages/dokter/dokter.component";
 
 const routes: Routes = [
   {
@@ -41,6 +42,14 @@ const routes: Routes = [
   {
     path: "list-apoteker",
     component: ListApotekerComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
+  },
+  {
+    path: "dokter",
+    component: DokterComponent
   }
 ];
 
