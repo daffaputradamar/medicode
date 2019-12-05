@@ -7,6 +7,9 @@ import { ListPasienComponent } from "./pages/list-pasien/list-pasien.component";
 import { ListPoliComponent } from "./pages/list-poli/list-poli.component";
 import { ListApotekerComponent } from "./pages/list-apoteker/list-apoteker.component";
 import { AddDokterComponent } from "./pages/add-dokter/add-dokter.component";
+import { AddPetugasMedisComponent } from "./pages/add-petugas-medis/add-petugas-medis.component";
+import { AddApotekerComponent } from "./pages/add-apoteker/add-apoteker.component";
+import { AddPoliComponent } from "./pages/add-poli/add-poli.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { DokterComponent } from "./pages/dokter/dokter.component";
 import { TambahresepComponent } from "./pages/dokter/tambahresep/tambahresep.component";
@@ -33,6 +36,10 @@ const routes: Routes = [
     component: ListPetugasMedisComponent
   },
   {
+    path: "add-petugas-medis",
+    component: AddPetugasMedisComponent
+  },
+  {
     path: "list-pasien",
     component: ListPasienComponent
   },
@@ -41,8 +48,16 @@ const routes: Routes = [
     component: ListPoliComponent
   },
   {
+    path: "add-poli",
+    component: AddPoliComponent
+  },
+  {
     path: "list-apoteker",
     component: ListApotekerComponent
+  },
+  {
+    path: "add-apoteker",
+    component: AddApotekerComponent
   },
   {
     path: "login",

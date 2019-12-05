@@ -15,7 +15,7 @@ export class UserService {
     return this.http.get(`${this.apiUrl}/user?posisi=dokter`);
   }
 
-  public getMedis() {
+  public getPetugasMedis() {
     return this.http.get(`${this.apiUrl}/user?posisi=medis`);
   }
 

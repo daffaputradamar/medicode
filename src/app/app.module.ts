@@ -17,6 +17,9 @@ import { ListPoliComponent } from "./pages/list-poli/list-poli.component";
 import { ListApotekerComponent } from "./pages/list-apoteker/list-apoteker.component";
 import { DokterComponent } from "./pages/dokter/dokter.component";
 import { TambahresepComponent } from "./pages/dokter/tambahresep/tambahresep.component";
+import { AddPetugasMedisComponent } from './pages/add-petugas-medis/add-petugas-medis.component';
+import { AddApotekerComponent } from './pages/add-apoteker/add-apoteker.component';
+import { AddPoliComponent } from './pages/add-poli/add-poli.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { TambahresepComponent } from "./pages/dokter/tambahresep/tambahresep.com
     ListPoliComponent,
     ListApotekerComponent,
     DokterComponent,
-    TambahresepComponent
+    TambahresepComponent,
+    AddPetugasMedisComponent,
+    AddApotekerComponent,
+    AddPoliComponent
   ],
 
   imports: [

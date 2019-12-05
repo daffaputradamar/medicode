@@ -1,13 +1,15 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnChanges } from "@angular/core";
 import { UserService } from "src/app/services/user.service";
+import { formatDate } from "../../../assets/util/formatDate";
 
 @Component({
   selector: "app-list-dokter",
   templateUrl: "./list-dokter.component.html",
   styleUrls: ["./list-dokter.component.css"]
 })
-export class ListDokterComponent implements OnInit {
+export class ListDokterComponent implements OnInit, OnChanges {
   listDokter;
+  formattedDate: string;
 
   constructor(private userService: UserService) {}
 
@@ -15,5 +17,9 @@ export class ListDokterComponent implements OnInit {
     this.userService.getDokter().subscribe(users => {
       this.listDokter = users;
     });
+  }
+
+  ngOnChanges() {
+    this.formattedDate = formatDate(this.listDokter.tanggalTerdaftar);
   }
 }
