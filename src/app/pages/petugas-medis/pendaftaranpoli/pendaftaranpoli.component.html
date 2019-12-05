@@ -1,0 +1,41 @@
+<div>
+  <h4>Pendaftaran Poli</h4>
+  <form [formGroup]="cariPasienPoli" (ngSubmit)="onSubmit()">
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <input type="text" class="form-control" formControlName="barcodePasien"/>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-1">
+        <button
+          class="submit btn btn-medicode mb-2 "
+          type="submit"
+        >
+          Tambah
+        </button>
+      </div>
+    </div>
+  </form>
+  <div class="row mt-2">
+    <div class="col-md-8">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama Poli</th>
+            <th scope="col">Nama Pasien</th>
+            <th scope="col">Tanggal Terdaftar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let berobat of listBerobat; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ berobat.poli.nama }}</td>
+            <td>{{ berobat.pasien.nama }}</td>
+            <td>{{ berobat.tanggalTerdaftar }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

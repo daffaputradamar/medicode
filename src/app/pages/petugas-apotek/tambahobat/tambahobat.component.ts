@@ -27,7 +27,6 @@ export class TambahobatComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.obatForm.value)
     if (this.obatForm.valid) {
       const addObat ={
         kode: this.obatForm.value.kode,

@@ -14,6 +14,8 @@ import { PetugasMedisComponent } from './pages/petugas-medis/petugas-medis.compo
 import { TambahpasienComponent } from './pages/petugas-medis/tambahpasien/tambahpasien.component';
 import { PetugasApotekComponent } from './pages/petugas-apotek/petugas-apotek.component';
 import { TambahobatComponent } from './pages/petugas-apotek/tambahobat/tambahobat.component';
+import { PendaftaranpoliComponent } from './pages/petugas-medis/pendaftaranpoli/pendaftaranpoli.component';
+import { TambahComponent } from './pages/petugas-medis/pendaftaranpoli/tambah/tambah.component';
 
 const routes: Routes = [
   {
@@ -67,6 +69,14 @@ const routes: Routes = [
   {
     path: "petugasmedis/tambahpasien",
     component:TambahpasienComponent
+  },
+  {
+    path: "petugasmedis/pendaftaranpoli",
+    component:PendaftaranpoliComponent
+  },
+  {
+    path: "petugasmedis/pendaftaranpoli/tambah/:id",
+    component:TambahComponent
   },
   {
     path: "petugasapotek",

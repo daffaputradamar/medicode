@@ -17,4 +17,8 @@ export class PasienService {
     public addPasien(pasien) {
       return this.http.post(`${this.apiUrl}/pasien`, pasien);
     }
+
+    public getPasienByBarcode(idPasien){
+      return this.http.get(`${this.apiUrl}/pasien/search/${idPasien}`)
+    }
 }

@@ -1,0 +1,44 @@
+<div class="card col-md-5">
+  <div class="card-body">
+    <h4>Form Pendaftaran Poli</h4>
+    <form [formGroup]="pendaftaranPoliForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>ID Pasien</label>
+        <input
+          type="text"
+          class="form-control"
+          id="kode"
+          formControlName="kode"
+          disabled
+        />
+      </div>
+      <div class="form-group">
+        <label>Nama Pasien</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nama"
+          formControlName="nama"
+          disabled
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-group">Poli</label>
+        <select
+          id="jenisKelamin"
+          class="form-control"
+          formControlName="jenisKelamin"
+        >
+          <option value="L">Laki - Laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-medicode btn-lg btn-block">
+          Tambah
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
