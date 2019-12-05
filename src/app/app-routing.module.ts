@@ -9,6 +9,7 @@ import { ListApotekerComponent } from "./pages/list-apoteker/list-apoteker.compo
 import { AddDokterComponent } from "./pages/add-dokter/add-dokter.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { DokterComponent } from "./pages/dokter/dokter.component";
+import { TambahresepComponent } from "./pages/dokter/tambahresep/tambahresep.component";
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: "dokter",
     component: DokterComponent
+  },
+  {
+    path: "tambahresep",
+    component: TambahresepComponent
   }
 ];
 
