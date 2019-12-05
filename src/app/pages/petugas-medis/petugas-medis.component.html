@@ -22,16 +22,22 @@
               <th scope="col">Usia</th>
               <th scope="col">Jenis Kelamin</th>
               <th scope="col">Alamat</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
               <tr *ngFor="let pasien of listPasien; let i = index">
                   <th scope="row">{{ i + 1 }}</th>
-                  <td>{{ pasien._id }}</td>
+                  <td>{{ pasien.idPasien }}</td>
                   <td>{{ pasien.nama }}</td>
                   <td>{{ pasien.usia }}</td>
                   <td>{{ pasien.jenisKelamin }}</td>
                   <td>{{ pasien.alamat }}</td>
+                  <td class="text-center">
+                      <fa-icon
+                      [icon]="faPrint"
+                      ></fa-icon>
+                  </td>
                 </tr>
           </tbody>
         </table>

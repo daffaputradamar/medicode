@@ -12,6 +12,8 @@ import { DokterComponent } from './pages/dokter/dokter.component';
 import { TambahresepComponent } from './pages/dokter/tambahresep/tambahresep.component';
 import { PetugasMedisComponent } from './pages/petugas-medis/petugas-medis.component';
 import { TambahpasienComponent } from './pages/petugas-medis/tambahpasien/tambahpasien.component';
+import { PetugasApotekComponent } from './pages/petugas-apotek/petugas-apotek.component';
+import { TambahobatComponent } from './pages/petugas-apotek/tambahobat/tambahobat.component';
 
 const routes: Routes = [
   {
@@ -65,6 +67,14 @@ const routes: Routes = [
   {
     path: "petugasmedis/tambahpasien",
     component:TambahpasienComponent
+  },
+  {
+    path: "petugasapotek",
+    component:PetugasApotekComponent
+  },
+  {
+    path: "petugasapotek/tambahobat",
+    component:TambahobatComponent
   }
 ];
 

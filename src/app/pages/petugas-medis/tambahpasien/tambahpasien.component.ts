@@ -27,7 +27,6 @@ export class TambahpasienComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.pasienForm.value)
     if(this.pasienForm.valid){
       const addPasien ={
         nama: this.pasienForm.value.nama,

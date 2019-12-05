@@ -1,0 +1,62 @@
+<div class="card col-md-5">
+  <div class="card-body">
+    <h4>Form Tambah Obat</h4>
+    <form [formGroup]="obatForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Kode Obat</label>
+        <input
+          type="text"
+          class="form-control"
+          id="kode"
+          formControlName="kode"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Nama Obat</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nama"
+          formControlName="nama"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Stok</label>
+        <input
+          type="text"
+          class="form-control"
+          id="stok"
+          formControlName="stok"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Satuan</label>
+        <input
+          type="text"
+          class="form-control"
+          id="satuan"
+          formControlName="satuan"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Harga</label>
+        <input
+          type="text"
+          class="form-control"
+          id="harga"
+          formControlName="harga"
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-medicode btn-lg btn-block">
+          Tambah
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

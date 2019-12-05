@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PasienService } from 'src/app/services/pasien.service';
-import { FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { faPrint } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-petugas-medis',
@@ -10,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PetugasMedisComponent implements OnInit {
   listPasien;
+  faPrint = faPrint;
 
   constructor(
     private pasienService: PasienService
