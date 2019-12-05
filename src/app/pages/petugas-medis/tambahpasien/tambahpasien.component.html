@@ -1,0 +1,50 @@
+<div class="card col-md-5">
+  <div class="card-body">
+    <h4>Form Tambah Pasien</h4>
+    <form [formGroup]="pasienForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Nama Pasien</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nama"
+          formControlName="nama"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Usia</label>
+        <input
+          type="text"
+          class="form-control"
+          id="usia"
+          formControlName="usia"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-group">Jenis Kelamin</label>
+        <select
+          id="jenisKelamin"
+          class="form-control"
+          formControlName="jenisKelamin"
+        >
+          <option value="L">Laki - Laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Alamat</label>
+        <input
+          type="text"
+          class="form-control"
+          id="alamat"
+          formControlName="alamat"
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-medicode btn-lg btn-block">Tambah</button>
+      </div>
+    </form>
+  </div>
+</div>

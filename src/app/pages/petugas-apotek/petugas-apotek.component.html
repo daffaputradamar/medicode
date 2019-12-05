@@ -1,0 +1,47 @@
+<div>
+  <h4>Daftar Obat</h4>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <input type="text" class="form-control" />
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-1">
+      <button
+        class="submit btn btn-medicode mb-2 "
+        routerLink="/petugasapotek/tambahobat"
+      >
+        Tambah
+      </button>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-8">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Kode Obat</th>
+            <th scope="col">Nama Obat</th>
+            <th scope="col">Stok</th>
+            <th scope="col">Satuan</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let obat of listObat; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ obat.kode }}</td>
+            <td>{{ obat.nama }}</td>
+            <td>{{ obat.stok }}</td>
+            <td>{{ obat.harga }}</td>
+            <td class="text-center">
+                <fa-icon
+                [icon]="faPlus"
+                ></fa-icon>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

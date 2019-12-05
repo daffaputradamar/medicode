@@ -17,9 +17,13 @@ import { ListPoliComponent } from "./pages/list-poli/list-poli.component";
 import { ListApotekerComponent } from "./pages/list-apoteker/list-apoteker.component";
 import { DokterComponent } from "./pages/dokter/dokter.component";
 import { TambahresepComponent } from "./pages/dokter/tambahresep/tambahresep.component";
-import { AddPetugasMedisComponent } from './pages/add-petugas-medis/add-petugas-medis.component';
-import { AddApotekerComponent } from './pages/add-apoteker/add-apoteker.component';
-import { AddPoliComponent } from './pages/add-poli/add-poli.component';
+import { AddPetugasMedisComponent } from "./pages/add-petugas-medis/add-petugas-medis.component";
+import { AddApotekerComponent } from "./pages/add-apoteker/add-apoteker.component";
+import { AddPoliComponent } from "./pages/add-poli/add-poli.component";
+import { PetugasMedisComponent } from "./pages/petugas-medis/petugas-medis.component";
+import { TambahpasienComponent } from "./pages/petugas-medis/tambahpasien/tambahpasien.component";
+import { PetugasApotekComponent } from "./pages/petugas-apotek/petugas-apotek.component";
+import { TambahobatComponent } from "./pages/petugas-apotek/tambahobat/tambahobat.component";
 
 @NgModule({
   declarations: [
@@ -37,7 +41,12 @@ import { AddPoliComponent } from './pages/add-poli/add-poli.component';
     TambahresepComponent,
     AddPetugasMedisComponent,
     AddApotekerComponent,
-    AddPoliComponent
+    AddPoliComponent,
+    PetugasMedisComponent,
+    TambahpasienComponent,
+    TambahresepComponent,
+    PetugasApotekComponent,
+    TambahobatComponent
   ],
 
   imports: [
