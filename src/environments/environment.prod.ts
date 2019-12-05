@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: "http://medicode-itc-backend.herokuapp.com"
 };
