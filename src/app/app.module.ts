@@ -23,6 +23,9 @@ import { PetugasApotekComponent } from './pages/petugas-apotek/petugas-apotek.co
 import { TambahobatComponent } from './pages/petugas-apotek/tambahobat/tambahobat.component';
 import { PendaftaranpoliComponent } from './pages/petugas-medis/pendaftaranpoli/pendaftaranpoli.component';
 import { TambahComponent } from './pages/petugas-medis/pendaftaranpoli/tambah/tambah.component';
+import { AddPetugasMedisComponent } from "./pages/add-petugas-medis/add-petugas-medis.component";
+import { AddApotekerComponent } from "./pages/add-apoteker/add-apoteker.component";
+import { AddPoliComponent } from "./pages/add-poli/add-poli.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { TambahComponent } from './pages/petugas-medis/pendaftaranpoli/tambah/ta
     ListApotekerComponent,
     DokterComponent,
     TambahresepComponent,
+    AddPetugasMedisComponent,
+    AddApotekerComponent,
+    AddPoliComponent,
     PetugasMedisComponent,
     TambahpasienComponent,
     TambahresepComponent,

@@ -5,11 +5,7 @@
       <input type="text" class="form-control" />
     </div>
     <div class="col-md-3"></div>
-    <div class="col-md-1">
-      <button class="submit btn btn-medicode mb-2 " (click)="tambah()">
-        Tambah
-      </button>
-    </div>
+    <div class="col-md-1"></div>
   </div>
   <div class="row mt-2">
     <div class="col-md-8">
@@ -25,13 +21,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let pasien of listPasien; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ pasien.idPasien }}</td>
+            <td>{{ pasien.nama }}</td>
+            <td>{{ pasien.usia }}</td>
+            <td>{{ pasien.jenisKelamin }}</td>
+            <td>{{ pasien.alamat }}</td>
           </tr>
         </tbody>
       </table>

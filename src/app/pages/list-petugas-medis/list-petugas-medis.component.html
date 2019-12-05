@@ -6,7 +6,10 @@
     </div>
     <div class="col-md-3"></div>
     <div class="col-md-1">
-      <button class="submit btn btn-medicode mb-2 " (click)="tambah()">
+      <button
+        class="submit btn btn-success mb-2 "
+        routerLink="/add-petugas-medis"
+      >
         Tambah
       </button>
     </div>
@@ -17,7 +20,6 @@
         <thead>
           <tr>
             <th scope="col">No</th>
-            <th scope="col">ID P. Medis</th>
             <th scope="col">Nama P. Medis</th>
             <th scope="col">Jenis Kelamin</th>
             <th scope="col">Alamat</th>
@@ -25,13 +27,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let petugasMedis of listPetugasMedis; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ petugasMedis.nama }}</td>
+            <td>{{ petugasMedis.jenisKelamin }}</td>
+            <td>{{ petugasMedis.alamat }}</td>
+            <td>{{ formattedDate(petugasMedis.tanggalTerdaftar) }}</td>
           </tr>
         </tbody>
       </table>

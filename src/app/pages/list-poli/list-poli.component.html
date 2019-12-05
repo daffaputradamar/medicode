@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-3"></div>
     <div class="col-md-1">
-      <button class="submit btn btn-success mb-2 " (click)="tambah()">
+      <button class="submit btn btn-success mb-2 " routerLink="/add-poli">
         Tambah
       </button>
     </div>
@@ -22,10 +22,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let poli of listPoli; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ poli.idPoli }}</td>
+            <td>{{ poli.nama }}</td>
           </tr>
         </tbody>
       </table>

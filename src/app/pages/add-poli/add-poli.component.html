@@ -1,0 +1,30 @@
+<div class="col-md-5">
+  <div class="card">
+    <div class="card-body">
+      <h4>Form Tambah Poli</h4>
+      <form [formGroup]="poliForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>ID Poli</label>
+          <input
+            type="text"
+            class="form-control"
+            id="idPoli"
+            formControlName="idPoli"
+          />
+        </div>
+        <div class="form-group">
+          <label>Nama Poli</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+            formControlName="nama"
+          />
+        </div>
+        <button type="submit" class="btn btn-medicode btn-lg btn-block">
+          Tambah
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

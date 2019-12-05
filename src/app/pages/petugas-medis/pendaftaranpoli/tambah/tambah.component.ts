@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PasienService } from 'src/app/services/pasien.service';
 import { FormBuilder } from '@angular/forms';
+import { PoliService } from 'src/app/services/poli.service';
 
 @Component({
   selector: 'app-tambah',
@@ -18,7 +19,11 @@ export class TambahComponent implements OnInit {
   // ])
   
 
-  constructor(private activatedRoute: ActivatedRoute, private pasienService: PasienService, private fb: FormBuilder) { }
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private pasienService: PasienService,
+    private poliService: PoliService, 
+    private fb: FormBuilder) { }
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(param => {
