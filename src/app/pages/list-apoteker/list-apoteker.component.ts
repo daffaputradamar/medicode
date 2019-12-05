@@ -9,7 +9,7 @@ import { formatDate } from "../../../assets/util/formatDate";
 })
 export class ListApotekerComponent implements OnInit {
   listApoteker;
-  formattedDate: string;
+  formattedDate = formatDate;
 
   constructor(private userService: UserService) {}
 
@@ -17,9 +17,5 @@ export class ListApotekerComponent implements OnInit {
     this.userService.getApoteker().subscribe(users => {
       this.listApoteker = users;
     });
-  }
-
-  ngOnChanges() {
-    this.formattedDate = formatDate(this.listApoteker.tanggalTerdaftar);
   }
 }
