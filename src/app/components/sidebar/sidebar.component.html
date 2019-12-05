@@ -3,15 +3,22 @@
     <img
       src="assets/logo.jpeg"
       width="150px"
-      style="margin-top: 100px;"
+      style="margin-top: 5vh;"
       class="rounded-circle border border-white"
-      style="margin-top: 130px;"
     />
   </div>
-  <h3 class="text-center" style="margin-top: 20px;">Admin</h3>
-  <ul class="nav flex-column">
+  <h3
+    class="text-center"
+    style="margin-top: 20px;font-size: xx-large; font-weight: bold;"
+  >
+    Admin
+  </h3>
+  <ul
+    class="nav flex-column mt-5"
+    style="font-size: x-large; font-weight: bold;"
+  >
     <li class="nav-item">
-      <a routerLink="/dashboard" class="nav-link active" style="color: white;"
+      <a routerLink="/dashboard" class="nav-link active" style="color: white; "
         >Dashboard</a
       >
     </li>
@@ -20,9 +27,31 @@
         >Dokter</a
       >
     </li>
-    <li class="nav-item"><a class="nav-link">Petugas Medis</a></li>
-    <li class="nav-item"><a class="nav-link">Pasien</a></li>
-    <li class="nav-item"><a class="nav-link">Poli</a></li>
-    <li class="nav-item"><a class="nav-link">Petugas Apotek</a></li>
+    <li class="nav-item">
+      <a
+        routerLink="/list-petugas-medis"
+        class="nav-link active"
+        style="color: white;"
+        >Petugas Medis</a
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="/list-pasien" class="nav-link active" style="color: white;"
+        >Pasien</a
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="/list-poli" class="nav-link active" style="color: white;"
+        >Poli</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        routerLink="/list-apoteker"
+        class="nav-link active"
+        style="color: white;"
+        >Petugas Apotek</a
+      >
+    </li>
   </ul>
 </div>
