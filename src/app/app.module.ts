@@ -13,6 +13,8 @@ import { AddDokterComponent } from './pages/add-dokter/add-dokter.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DokterComponent } from './pages/dokter/dokter.component';
 import { TambahresepComponent } from './pages/dokter/tambahresep/tambahresep.component';
+import { PetugasMedisComponent } from './pages/petugas-medis/petugas-medis.component';
+import { TambahpasienComponent } from './pages/petugas-medis/tambahpasien/tambahpasien.component';
 
 @NgModule({
 
@@ -25,6 +27,8 @@ import { TambahresepComponent } from './pages/dokter/tambahresep/tambahresep.com
     LoginComponent,
     DokterComponent,
     TambahresepComponent,
+    PetugasMedisComponent,
+    TambahpasienComponent,
   ],
 
 
